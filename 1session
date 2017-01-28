@@ -1,0 +1,5 @@
+touch notes.text
+virtualenv [name of dirictory]
+source [name of dirictory]/bin/activate
+django-admin.py startproject [name of project]
+python manage.py runserver [number of port]
