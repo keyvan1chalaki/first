@@ -5,7 +5,13 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Expense(models.Model):
-    tx=models.CharField(max_length=300)
+    text=models.CharField(max_length=300)
+    date=models.DateField()
+    amount=models.BigIntegerField()
+    user=models.ForeignKey(User)
+
+class Income(models.Model):
+    text=models.CharField(max_length=300)
     date=models.DateField()
     amount=models.BigIntegerField()
     user=models.ForeignKey(User)
