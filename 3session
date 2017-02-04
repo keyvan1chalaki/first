@@ -1,0 +1,10 @@
+from web.models import *
+Expense.objects.all()
+import datetime
+now=datetime.datetime.now()
+user=User.objects.get()
+kharj=Expense.objects.create(user=user,date=now, text="lunch",amount=15000)
+khharj.save()
+objects=Expense.objects.all()
+i=objects[0]
+
